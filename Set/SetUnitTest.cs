@@ -116,6 +116,8 @@ public class SetTests
         Assert.True(NodeSet < UnionNode);
         Assert.False(NodeSet > UnionNode);
 
+        Assert.False(NodeSet > NodeSet);
+        Assert.False(NodeSet < NodeSet);
         Assert.True(NodeSet >= NodeSet);
         Assert.True(NodeSet <= NodeSet);
 
